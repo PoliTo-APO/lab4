@@ -100,9 +100,6 @@ stesso colore del pixel di partenza (e contenente lo stesso).
 I pixel confinanti in un vertice sono considerati contigui.
 
 ```python
-Nuovo colore: 5
-Posizione: (2,7) # (riga, colonna) partendo da 0
-
 Immagine di partenza
 1 1 1 1 1 1 1 1 1 1
 1 1 1 1 0 4 1 1 1 1
@@ -115,6 +112,9 @@ Immagine di partenza
 1 1 1 3 3 3 3 3 1 1
 2 2 2 2 2 2 2 2 2 2
 
+Nuovo colore: 5
+Posizione: (2,7) # (riga, colonna) partendo da 0
+
 Immagine risultante
 5 5 5 5 5 5 5 5 5 5
 5 5 5 5 0 4 5 5 5 5
@@ -125,9 +125,24 @@ Immagine risultante
 5 5 5 5 5 4 5 5 5 5
 5 5 3 3 3 3 3 3 3 5
 5 5 5 3 3 3 3 3 5 5
-2 2 2 2 2 2 2 2 2 2 
-```
+2 2 2 2 2 2 2 2 2 2
 
+Nuovo colore: 6
+Posizione: (4,6) # (riga, colonna) partendo da 0
+
+Immagine risultante
+5 5 5 5 5 5 5 5 5 5
+5 5 5 5 0 4 5 5 5 5
+5 5 5 0 0 4 6 5 5 5
+5 5 5 0 0 4 6 5 5 5
+5 5 0 0 0 4 6 6 5 5
+5 0 0 0 0 4 6 6 6 5
+5 5 5 5 5 4 5 5 5 5
+5 5 3 3 3 3 3 3 3 5
+5 5 5 3 3 3 3 3 5 5
+2 2 2 2 2 2 2 2 2 2 
+
+```
 
 Assumendo
 - ![#sail](https://placehold.co/15x15/ffffff/ffffff.png) `0`
@@ -136,11 +151,13 @@ Assumendo
 - ![#boat](https://placehold.co/15x15/e2663d/e2663d.png) `3`
 - ![#main-mast](https://placehold.co/15x15/c0a535/c0a535.png) `4`
 - ![#sky-dawm](https://placehold.co/15x15/ffab98/ffab98.png) `5`
+- ![#black-sail](https://placehold.co/15x15/000000/000000.png) `6`
 
 le immagini sono le seguenti:
 
 <img src="img/boat_day.png" width="200" />
 <img src="img/boat_night.png" width="200" />
+<img src="img/boat_night_black.png" width="200" />
 
 
 
